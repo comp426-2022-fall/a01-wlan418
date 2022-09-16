@@ -20,7 +20,7 @@ const fileName = `./public/index.html`;
 // Do not be nice about exiting.
 fs.readFile(fileName, 'utf8', (err, data) => {
 	if (err) {
-		console.log(err);
+		console.error(err);
 		return;
 	} 
 	console.log(data);
